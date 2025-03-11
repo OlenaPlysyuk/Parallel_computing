@@ -83,7 +83,7 @@ if __name__ == "__main__":
     # ------------------------------------------------------
     small_data = [3, 1, 4, 2, 5]
     k_small = 2
-    filename_small = "small_data.txt"
+    filename_small = "../small_data.txt"
 
     # Запис і читання для демонстрації
     write_data_to_file(filename_small, small_data)
@@ -114,7 +114,7 @@ if __name__ == "__main__":
     # ------------------------------------------------------
     size_5sec = 2 * 10**7 #
     k_5sec = size_5sec // 2
-    filename_5sec = "data_5sec.txt"
+    filename_5sec = "../data_5sec.txt"
 
     # Генеруємо дані
     data_5sec = [random.randint(1, 10**6) for _ in range(size_5sec)]
