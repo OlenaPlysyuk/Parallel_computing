@@ -1,0 +1,41 @@
+version: '3'
+services:
+
+  subjects_service:
+    build: ./subjects_service
+    container_name: subjects_service
+    ports:
+      - "8001:8001"
+    # environment:
+    #   - SOME_ENV=VALUE
+
+  tests_service:
+    build: ./tests_service
+    container_name: tests_service
+    ports:
+      - "8002:8002"
+    depends_on:
+      - subjects_service
+
+  questions_service:
+    build: ./questions_service
+    container_name: questions_service
+    ports:
+      - "8003:8003"
+    depends_on:
+      - tests_service
+
+  students_service:
+    build: ./students_service
+    container_name: students_service
+    ports:
+      - "8004:8004"
+
+  answers_service:
+    build: ./answers_service
+    container_name: answers_service
+    ports:
+      - "8005:8005"
+    depends_on:
+      - questions_service
+      - students_service

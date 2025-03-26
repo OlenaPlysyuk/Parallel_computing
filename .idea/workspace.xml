@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd8d6df3-2e43-4ddf-906a-7f93361ce3a2" name="Changes" comment="" />
+    <list default="true" id="fd8d6df3-2e43-4ddf-906a-7f93361ce3a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LAB4/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/answers_service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/answers_service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/answers_service/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/answers_service/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/questions_service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/questions_service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/questions_service/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/questions_service/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/students_service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/students_service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/students_service/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/students_service/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/subjects_service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/subjects_service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/subjects_service/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/subjects_service/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/tests_service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/tests_service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/tests_service/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB4/tests_service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB1/LAB1.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB1/LAB1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB3/task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB3/task3.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -31,13 +60,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.LAB1.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.LAB1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;LAB3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oplys/PycharmProjects/PythonProject/LAB4/answers_service&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oplys\PycharmProjects\PythonProject\LAB4\answers_service" />
+      <recent name="C:\Users\oplys\PycharmProjects\PythonProject\LAB4\tests_service" />
+      <recent name="C:\Users\oplys\PycharmProjects\PythonProject\LAB4\subjects_service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oplys\PycharmProjects\PythonProject\LAB1" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

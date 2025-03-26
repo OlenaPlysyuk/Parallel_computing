@@ -4,11 +4,11 @@ from typing import Optional, List
 
 app = FastAPI(
     title="Міні-бібліотека",
-    description="Простий приклад REST-сервісу на FastAPI для 3 ресурсів: Автори, Книги, Читачі",
+    description=" REST-сервіс на FastAPI для 3 ресурсів: Автори, Книги, Читачі",
     version="1.0.0"
 )
 
-# ===== Pydantic-моделі =====
+# Pydantic-моделі
 class AuthorBase(BaseModel):
     name: str
     biography: Optional[str] = None
@@ -40,7 +40,7 @@ class CustomerCreate(CustomerBase):
 class Customer(CustomerBase):
     id: int
 
-# ===== "База даних" у пам'яті =====
+# "База даних" у пам'яті
 authors_db: List[Author] = []
 books_db: List[Book] = []
 customers_db: List[Customer] = []

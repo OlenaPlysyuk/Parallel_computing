@@ -38,7 +38,7 @@ def partition_chunk(args):
     return left, eq, right
 
 def parallel_partition(arr, pivot, pool, num_workers):
-    """Паралельне розбиття масиву на left, eq, right за одним pivot."""
+    #Паралельне розбиття масиву на left, eq, right за одним pivot.#
     chunk_size = max(1, len(arr) // num_workers)
     chunks = [arr[i:i + chunk_size] for i in range(0, len(arr), chunk_size)]
     results = pool.map(partition_chunk, [(chunk, pivot) for chunk in chunks])
@@ -51,10 +51,10 @@ def parallel_partition(arr, pivot, pool, num_workers):
     return left_all, eq_all, right_all
 
 def parallel_quickselect(arr, k, pool, num_workers, depth=0, max_depth=2, threshold=50000):
-    """
-    Паралельний quickselect з обмеженням глибини max_depth
-    та порогом threshold для послідовного алгоритму.
-    """
+
+   # Паралельний quickselect з обмеженням глибини max_depth
+   # та порогом threshold для послідовного алгоритму.
+
     if len(arr) <= threshold or depth >= max_depth:
         return quickselect(arr, k)
     if not arr:

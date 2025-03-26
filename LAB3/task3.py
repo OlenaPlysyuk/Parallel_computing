@@ -379,6 +379,7 @@ def answer_question(
         "result": "correct" if is_correct else "wrong"
     }
 
+
 # ----------------------------------------------------------------------------------
 #   uvicorn task3:app --reload
 # АБО
