@@ -39,3 +39,8 @@ services:
     depends_on:
       - questions_service
       - students_service
+  redis:
+    image: "redis:7"
+    container_name: redis_container
+    ports:
+      - "6379:6379"

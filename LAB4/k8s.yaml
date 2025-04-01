@@ -1,0 +1,223 @@
+---
+# Subjects Service
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: subjects-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: subjects-service
+  template:
+    metadata:
+      labels:
+        app: subjects-service
+    spec:
+      containers:
+      - name: subjects-service
+        image: docker.io/lab4-subjects_service:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8001
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: subjects-service
+spec:
+  selector:
+    app: subjects-service
+  ports:
+    - protocol: TCP
+      port: 8001
+      targetPort: 8001
+  type: NodePort
+
+
+---
+# Tests Service
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tests-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tests-service
+  template:
+    metadata:
+      labels:
+        app: tests-service
+    spec:
+      containers:
+      - name: tests-service
+        image: docker.io/lab4-tests_service:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8002
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tests-service
+spec:
+  selector:
+    app: tests-service
+  ports:
+    - protocol: TCP
+      port: 8002
+      targetPort: 8002
+  type: NodePort
+
+
+
+---
+# Questions Service
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: questions-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: questions-service
+  template:
+    metadata:
+      labels:
+        app: questions-service
+    spec:
+      containers:
+      - name: questions-service
+        image: docker.io/lab4-questions_service:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8003
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: questions-service
+spec:
+  selector:
+    app: questions-service
+  ports:
+    - protocol: TCP
+      port: 8003
+      targetPort: 8003
+  type: NodePort
+
+
+
+---
+# Students Service
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: students-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: students-service
+  template:
+    metadata:
+      labels:
+        app: students-service
+    spec:
+      containers:
+      - name: students-service
+        image: docker.io/lab4-students_service:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8004
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: students-service
+spec:
+  selector:
+    app: students-service
+  ports:
+    - protocol: TCP
+      port: 8004
+      targetPort: 8004
+  type: NodePort
+
+
+
+---
+# Answers Service
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: answers-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: answers-service
+  template:
+    metadata:
+      labels:
+        app: answers-service
+    spec:
+      containers:
+      - name: answers-service
+        image: docker.io/lab4-answers_service:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8005
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: answers-service
+spec:
+  selector:
+    app: answers-service
+  ports:
+    - protocol: TCP
+      port: 8005
+      targetPort: 8005
+  type: NodePort
+
+
+
+---
+# Redis
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+      - name: redis
+        image: redis:7
+        ports:
+        - containerPort: 6379
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+spec:
+  selector:
+    app: redis
+  ports:
+    - protocol: TCP
+      port: 6379
+      targetPort: 6379
+  type: ClusterIP
