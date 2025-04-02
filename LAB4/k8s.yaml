@@ -1,5 +1,5 @@
 ---
-# Subjects Service
+# Subjects Service Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,11 +16,12 @@ spec:
     spec:
       containers:
       - name: subjects-service
-        image: docker.io/lab4-subjects_service:latest
+        image: docker.io/lab4-subjects-service:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8001
 ---
+# Subjects Service
 apiVersion: v1
 kind: Service
 metadata:
@@ -33,10 +34,8 @@ spec:
       port: 8001
       targetPort: 8001
   type: NodePort
-
-
 ---
-# Tests Service
+# Tests Service Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -53,11 +52,12 @@ spec:
     spec:
       containers:
       - name: tests-service
-        image: docker.io/lab4-tests_service:latest
+        image: docker.io/lab4-tests-service:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8002
 ---
+# Tests Service
 apiVersion: v1
 kind: Service
 metadata:
@@ -70,11 +70,8 @@ spec:
       port: 8002
       targetPort: 8002
   type: NodePort
-
-
-
 ---
-# Questions Service
+# Questions Service Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -91,11 +88,12 @@ spec:
     spec:
       containers:
       - name: questions-service
-        image: docker.io/lab4-questions_service:latest
+        image: docker.io/lab4-questions-service:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8003
 ---
+# Questions Service
 apiVersion: v1
 kind: Service
 metadata:
@@ -108,11 +106,8 @@ spec:
       port: 8003
       targetPort: 8003
   type: NodePort
-
-
-
 ---
-# Students Service
+# Students Service Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -129,11 +124,12 @@ spec:
     spec:
       containers:
       - name: students-service
-        image: docker.io/lab4-students_service:latest
+        image: docker.io/lab4-students-service:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8004
 ---
+# Students Service
 apiVersion: v1
 kind: Service
 metadata:
@@ -146,11 +142,8 @@ spec:
       port: 8004
       targetPort: 8004
   type: NodePort
-
-
-
 ---
-# Answers Service
+# Answers Service Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -167,11 +160,12 @@ spec:
     spec:
       containers:
       - name: answers-service
-        image: docker.io/lab4-answers_service:latest
+        image: docker.io/lab4-answers-service:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8005
 ---
+# Answers Service
 apiVersion: v1
 kind: Service
 metadata:
@@ -184,11 +178,8 @@ spec:
       port: 8005
       targetPort: 8005
   type: NodePort
-
-
-
 ---
-# Redis
+# Redis Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -209,6 +200,7 @@ spec:
         ports:
         - containerPort: 6379
 ---
+# Redis Service
 apiVersion: v1
 kind: Service
 metadata:

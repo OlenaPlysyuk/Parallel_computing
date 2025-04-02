@@ -6,9 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="fd8d6df3-2e43-4ddf-906a-7f93361ce3a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/answers_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/answers-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/answers_service/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/answers-service/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/answers_service/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/answers-service/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/answers_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/answers-service/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LAB4/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LAB4/questions_service/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/questions_service/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LAB4/questions_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/questions_service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/k8s.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/k8s.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/questions_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/questions-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/questions_service/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/questions-service/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/questions_service/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/questions-service/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/questions_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/questions-service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/students_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/students-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/students_service/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/students-service/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/students_service/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/students-service/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/students_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/students-service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/subjects_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/subjects-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/subjects_service/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/subjects-service/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/subjects_service/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/subjects-service/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/subjects_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/subjects-service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/tests_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/tests-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/tests_service/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/tests-service/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/tests_service/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/tests-service/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB4/tests_service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LAB4/tests-service/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
